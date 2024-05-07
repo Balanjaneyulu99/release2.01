@@ -1,0 +1,119 @@
+file for the use of release3.02 code 
+
+html, body, #h, #f {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+html {
+    background-color: #f2f3f3;
+}
+html {
+    font-size: .625rem;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+}
+html {
+    font-size: .625rem;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+WHATWG
+HTML
+Living Standard — Last Updated 3 May 2024
+
+← 4.12 Scripting — Table of Contents — 4.13 Custom elements →
+4.12.5 The canvas element
+4.12.5.1 The 2D rendering context
+4.12.5.1.1 Implementation notes
+4.12.5.1.2 The canvas state
+4.12.5.1.3 Line styles
+4.12.5.1.4 Text styles
+4.12.5.1.5 Building paths
+4.12.5.1.6 Path2D objects
+4.12.5.1.7 Transformations
+4.12.5.1.8 Image sources for 2D rendering contexts
+4.12.5.1.9 Fill and stroke styles
+4.12.5.1.10 Drawing rectangles to the bitmap
+4.12.5.1.11 Drawing text to the bitmap
+4.12.5.1.12 Drawing paths to the canvas
+4.12.5.1.13 Drawing focus rings and scrolling paths into view
+4.12.5.1.14 Drawing images
+4.12.5.1.15 Pixel manipulation
+4.12.5.1.16 Compositing
+4.12.5.1.17 Image smoothing
+4.12.5.1.18 Shadows
+4.12.5.1.19 Filters
+4.12.5.1.20 Working with externally-defined SVG filters
+4.12.5.1.21 Drawing model
+4.12.5.1.22 Best practices
+4.12.5.1.23 Examples
+4.12.5.2 The ImageBitmap rendering context
+4.12.5.2.1 Introduction
+4.12.5.2.2 The ImageBitmapRenderingContext interface
+4.12.5.3 The OffscreenCanvas interface
+4.12.5.3.1 The offscreen 2D rendering context
+4.12.5.4 Color spaces and color space conversion
+4.12.5.5 Serializing bitmaps to a file
+4.12.5.6 Security with canvas elements
+4.12.5.7 Premultiplied alpha and the 2D rendering context
+4.12.5 The canvas element
+✔MDN✔MDN
+Categories:
+Flow content.
+Phrasing content.
+Embedded content.
+Palpable content.
+Contexts in which this element can be used:
+Where embedded content is expected.
+Content model:
+Transparent, but with no interactive content descendants except for a elements, img elements with usemap attributes, button elements, input elements whose type attribute are in the Checkbox or Radio Button states, input elements that are buttons, and select elements with a multiple attribute or a display size greater than 1.
+Tag omission in text/html:
+Neither tag is omissible.
+Content attributes:
+Global attributes
+width — Horizontal dimension
+height — Vertical dimension
+Accessibility considerations:
+For authors.
+For implementers.
+DOM interface:
+typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) RenderingContext;
+
+[Exposed=Window]
+interface HTMLCanvasElement : HTMLElement {
+  [HTMLConstructor] constructor();
+
+  [CEReactions] attribute unsigned long width;
+  [CEReactions] attribute unsigned long height;
+
+  RenderingContext? getContext(DOMString contextId, optional any options = null);
+
+  USVString toDataURL(optional DOMString type = "image/png", optional any quality);
+  undefined toBlob(BlobCallback _callback, optional DOMString type = "image/png", optional any quality);
+  OffscreenCanvas transferControlToOffscreen();
+};
+html {
+	-webkit-text-size-adjust: 75%;
+	line-height: 1.15;
+}
+html {
+	font-size : 0.6025rem;
+}
+
