@@ -1,0 +1,44 @@
+#ERROR-1
+	(A form field element has neither an id nor a name attribute)
+
+A form field element has neither an id nor a name attribute. This might prevent the browser from correctly autofilling the form.
+To fix this issue, add a unique id or name attribute to a form field. This is not strictly needed, but still recommended even if you have an autocomplete attribute on the same element.
+	AFFECTED RESOURCES-2
+
+#ERROR-2
+	(Deprecated feature used)
+
+Unload event listeners are deprecated and will be removed
+	AFFECTED RESOURCES-1
+
+#ERROR-3
+	(Ensure CORS response header values are vaild)
+
+A cross-origin resource sharing request was blocked because of invalid or missing response headers of the request or thr associated preflight request.
+To fix this issue,ensure the response to the CORS request and/or the associated preflight request are not missing headers and use valid header values.
+
+NOTE: If an opaque response is sufficient, the request's mode an be set to no-cors to fetch the resource with CORS disabled; that way CORS headers are not required but the response content is inaccessible (opaque).
+	AFFECTED RESOURCES-1
+Panoramaroute status is blocked and the access control allow origin(problem-Missing header)
+
+#ERROR-4
+	(Incorrect use of <label for=FORM_ELEMENT>)
+
+The label's for attribute doesn't match any element id.This might prevent the browser from correctly autofilling the form and accessibility tools from woking correctly.
+To fix this issue, make sure the label's for correct id of a form field.
+	AFFECTED RESOURCES-3
+
+---------------------------------------------------------------------
+RemoteLogger - Exception loading content Error: Cannot find module './messages/en.json'. Falling back to using en content.
+drawers.js:18 [AwsUi] [runtime drawers] multiple app layout instances detected
+onDrawersRegistered @ drawers.js:18
+Show 1 more frame
+Show less
+dashboard:1 An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+/ec2/home?region=eu-north-1#Instances:instanceState=running:1 Access to fetch at 'https://eu-north-1.prod.pr.analytics.console.aws.a2z.com/panoramaroute' from origin 'https://eu-north-1.console.aws.amazon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+panoramaroute:1
+
+
+       Failed to load resource: net::ERR_FAILED
+
+
